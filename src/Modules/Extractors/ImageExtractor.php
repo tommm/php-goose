@@ -222,7 +222,7 @@ class ImageExtractor extends AbstractModule implements ModuleInterface {
                 $totalScore = 1;
             } else {
                 $areaDifference = $area * $initialArea;
-                $totalScore = $sequenceScore * $areaDifference;
+                $totalScore = $sequenceScore * (int) $areaDifference;
             }
 
             $i++;
